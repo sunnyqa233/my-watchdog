@@ -18,7 +18,7 @@ ServiceList = [
     {
         "name": "mariadbd",
         "bin": "/www/server/mysql/bin/mariadbd",
-        "restart_cmd": "systemctl restart mysql",
+        "restart_cmd": "/etc/init.d/mysqld restart",
         "message": "Mariadb寄了， 已重启。"
     },
     {
