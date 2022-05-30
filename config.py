@@ -56,5 +56,11 @@ ServiceList = [
         "bin": "/www/server/mongodb/bin/mongod",
         "restart_cmd": "/etc/init.d/mongodb restart",
         "message": "MongoDB寄了， 已重启。"
+    },
+    {
+        "name": "cloudreve",
+        "bin": "/disk/S01/tech0.link/pan.tech0.link/cloudreve",
+        "restart_cmd": "systemctl restart cloudreve",
+        "message": "Cloudreve寄了， 已重启。"
     }
 ]
