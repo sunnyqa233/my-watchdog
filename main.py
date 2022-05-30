@@ -40,3 +40,20 @@ for item in ServiceList:
     if not found:
         os.system(item["restart_cmd"])
         send_message(item["message"])
+
+
+"""
+Check disk usage
+"""
+for item in psutil.disk_partitions():
+    usage = psutil.disk_usage(item.mountpoint)
+    if "snap" not in item.mountpoint:
+        if usage.percent >= 80:
+            send_message(f"{item.device} 挂载于 {item.mountpoint} 已使用 {usage.percent}!")
+
+
+"""
+Check ram usage
+"""
+if psutil.virtual_memory().percent >= 90:
+    send_message(f"内存已使用 {psutil.virtual_memory().percent}!")
