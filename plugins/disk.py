@@ -14,7 +14,7 @@ def get_disk_usage():
             pass
         else:
             usage_list.append(
-                (usage, mount_point, partition.device)
+                (usage.percent, mount_point, partition.device)
             )
 
     return usage_list
