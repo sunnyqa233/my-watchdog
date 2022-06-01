@@ -9,8 +9,10 @@ def get_disk_temperature():
 
     device_list = pySMART.DeviceList()
     for device in device_list:
-        disk_temperature_list.append(
-            (device.attributes[194].raw_int, device.name)
-        )
+        data = device.attributes[194]
+        if data:
+            disk_temperature_list.append(
+                (device.attributes[194].raw_int, device.name)
+            )
 
     return disk_temperature_list
