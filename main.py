@@ -6,7 +6,7 @@ import json
 import os
 
 # Read options
-with open("config.json", "r", encoding="utf-8") as f:
+with open(os.path.dirname(os.path.realpath(__file__))+"/config.json", "r", encoding="utf-8") as f:
     options = json.loads(f.read())
 
 # Create discord webhook
