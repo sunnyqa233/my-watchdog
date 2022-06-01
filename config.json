@@ -1,0 +1,12 @@
+{
+  "discord_webhook": "",
+  "disk_usage_check": true,
+  "disk_usage_threshold": 95,
+  "disk_temperature_check": true,
+  "disk_temperature_threshold": 65,
+  "disk_temperature_shutdown": true,
+  "ram_usage_check": true,
+  "ram_usage_threshold": 90,
+  "swap_usage_check": true,
+  "swap_usage_threshold": 75
+}
