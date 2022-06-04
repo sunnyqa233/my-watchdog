@@ -19,12 +19,5 @@ pip3 install rich
 pip3 install psutil
 pip3 install discord-webhook
 pip3 install pySMART
+pip3 install flask
 ```
-
-## Settings
-### Run config tool
-```commandline
-python3 config-tool.py
-```
-### Run the script regularly
-You may execute main.py every five minutes. It depends on you.
